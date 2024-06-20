@@ -28,9 +28,9 @@ xlabel('Samples'); %xlabel('t/ms');
 
 
 % Aus den samples kann die Time difference abgelesen werden (10Ts). 
-delta_TS = 10;
+delta_TS = 10; % TR - TL
 disp(1/fs * delta_TS * 1000 + "ms");
 TDoA = 1/fs * delta_TS;
-D = (TDoA /2)*c + A/2;
+D = (TDoA /2)*c - A/2;
 disp("D = " +D)
 disp("Genauigkeit: +- "+  c * (1/fs) /2)
