@@ -6,7 +6,7 @@ window = false;
 fs = 8000;
 N = 16;
 Ts = 1 / fs;
-first_repeat_at = 0.8;
+first_repeat_at = 1;
 f_0 = 1000 /first_repeat_at;
 prefactor = 1; % factor before sin or cosinus
 % ADJUST SINUS OR COSINUS AT THE BOTTOM OF FILE
